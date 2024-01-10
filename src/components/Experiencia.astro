@@ -1,0 +1,37 @@
+---
+import type { Code, Debug } from "astro:components";
+import ExperienciaItem from "./ExperienciaItem.astro";
+import type { Image } from "astro:assets";
+const EXPERIENCE =[
+{
+    date: "Actualmente...",
+    title: "Desarrollador Junior − Ibermatica an Ayesa Company",
+    description:
+      "Estudio, formación y certificación en APX (Extended Java Backend Architecture), para su uso en sistemas bancarios",
+    link: "https://github.com/MikePuroShow",
+  },
+  {
+        date: "Marzo 2023 - Junio 2023",
+    title: "Desarrollador Junior En Prácticas  − Ibermática an Ayesa Company",
+    description:
+      "Analisís de código JAVA, depuración de aplicaciones, estudio y formación en APX (Extended Java Backend Architecture), para su uso en sistemas bancarios",
+  },
+]
+---
+
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-4">     
+    
+    
+{
+    EXPERIENCE.map(experiencie=>(
+    <li class="mb-10 ms-4">
+
+        <ExperienciaItem {...experiencie}/>       
+      
+        </li>
+    ))
+}
+</ol>
+

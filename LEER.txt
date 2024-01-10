@@ -1,0 +1,10 @@
+
+PASOS EN LA CREACION DEL PROYECTO
+    1 . -> IR AL CMD Y PONER PNPM CREATE ASTRO@LASTEST 
+    2 . -> AÑADIR TAILWIND CSS -> npx astro add tailwind
+
+    WEBS DE RADIANTES -> https://bg.ibelick.com/
+
+
+
+    ICONOS-> TablerIcons

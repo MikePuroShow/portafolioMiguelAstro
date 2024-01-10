@@ -1,0 +1,69 @@
+---
+
+const TAGS = {
+  JAVA: {
+    name: "JAVA",
+    class: "bg-[#FF7070] text-white",
+  },
+  SQL: {
+    name: "SQL",
+    class: "bg-[#003159] text-white",
+  },
+
+  PHP:{
+    name: "PHP",
+    class: "bg-[#2770B0] text-white",
+  },
+}
+
+const PROJECTS = [
+  {
+    title: "MIS LIGAS+  | Sistema Gestor de Ligas para escritorio y android ",
+    description:
+      "Creada principalmente en JAVA, usando SQL con MariaDB para la base de datos y con la ayuda de PHP para las peticiones al servidor, además del framework JAVAFX para la interfaz gráfica ",
+    link: "https://svgl.vercel.app/",
+    github: "https://github.com//",
+    image: "../134shots_so.png",
+    tags: [TAGS.JAVA, TAGS.SQL, TAGS.PHP],
+  },
+]
+---
+
+
+{
+
+
+
+    PROJECTS.map(({ image, title, description, tags }) => (
+      <article>
+        <h3 class="text-2xl font-semibold text-9966FF font-bold dark:text-yellow-200 mb-2">
+          {title}
+        </h3>
+        <p class="text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex gap-x-2 flex-row mb-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10`}
+              >
+                
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <img
+          loading="lazy"
+          class="pt-8 rounded shadow-2xl shadow-white/10 aspect-video"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${image}`}
+        />
+      </article>
+    ))
+  }
+
+<!--PARA LOS MOCKUPS DE IMAGENES ->SHOTS.SO
+
+    RENDERIZAR LA IMAGEN -> squoosh
+
+-->
